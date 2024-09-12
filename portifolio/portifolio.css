@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+
+body {
+margin: 0;
+padding: 0;
+background-color: black;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment:fixed ;
+
+}
+
+
+.titulo:hover{
+background-color: rgba(128, 128, 128, 0.121);
+transition: 1s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+}
+
+img {
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 50%;
+    width: 250px;
+    border: 3px solid rgba(255, 255, 255, 0.159);
+    padding: 10px;
+}
+
+
+.container {
+    margin: auto;
+    margin-top: 40px;
+   
+    max-width: 40%;
+}
+
+img {
+   
+    margin: auto;
+    display: flex;
+    animation: sobeDesce 4s infinite;
+    background-position: center;
+}
+
+@keyframes sobeDesce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 200;
+}
+
+h2{
+    text-align: center;
+    background-color: rgba(180, 19, 19, 0.395);
+    border: 1px solid rgba(0, 0, 0, 0.373);
+    border-radius: 1.5vh;
+    max-width: 300px;
+    margin: 20px auto;
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: center;
+}
+
+i {
+    margin: 10px;
+    font-size: 40px;
+    padding: 10px;
+}
+
+i:hover {
+    background-color: rgba(128, 128, 128, 0.296);
+    border: 1px solid rgba(0, 0, 0, 0.477);
+    border-radius: 4vh;
+    transition: 0.6s;
+}
+
+.footer-h1 {
+    margin-top: 70px;
+    max-width: 400px;
+}
+
+.nome {
+    font-weight: bolder;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: bolder;
+    font-weight: lighter;
+}
+
+h1{
+   color: white;
+}
+
+.ul-link{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 20px;
+}
+li{
+    list-style: none;
+}
+.li-link{
+border: 1px solid red;
+padding: 20px;
+border-radius: 3vh;
+
+}
+
+iframe{
+    margin: auto;
+    display: flex;
+    border-radius: 2vh;
+    border: 1px solid rgba(255, 255, 255, 0.252);
+    box-shadow: 1px 1px 1px;
+}
+
+
+@media screen and (max-width:768px) {
+    .container {
+        margin: auto;
+        margin-top: 40px;
+       
+        max-width: 80%;
+    }
+    .header{
+        display: none;
+    }
+}
